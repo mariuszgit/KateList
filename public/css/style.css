@@ -138,12 +138,12 @@ h1 {
           justify-content: center;
 }
 
-.list-item__title {
-  margin-bottom: 4px;
-}
-
 .list-item__description {
   padding-left: 16px;
+}
+
+.list-item__title {
+  margin-bottom: 4px;
 }
 
 .list-item__details {
