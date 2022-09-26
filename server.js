@@ -29,4 +29,9 @@ app.post('/api', (request, response) => {
         response.json(request.body)
         db.insert(request.body)
     }
+    if (request.body.action == 'remove') {
+        db.remove({_id: request.body.id},{},function(err, removed_item) {
+            console.log(removed_item);
+        })
+    }
 })

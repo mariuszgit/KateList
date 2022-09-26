@@ -1,7 +1,8 @@
-
-
 const add_btn = document.querySelector('#add-btn');
 const add_order = document.querySelector('.add-order');
+
+
+
 
 add_btn.addEventListener('click', ()=> {
     showAddOrder()
@@ -44,6 +45,7 @@ async function sendData(data) {
     console.log(json);
 }
 
+
 async function printList() {
     const response = await fetch('/api');
     const json = await response.json();
@@ -51,6 +53,17 @@ async function printList() {
     json.forEach(element => {
         createListItem(element)
     });
+    //
+    const list_items = document.querySelectorAll('.list-item');
+    for (let item of list_items) {
+        item.addEventListener('click', function(e) {
+            data= {
+                id: e.target.closest('.list-item').dataset.id,
+                action: 'remove'
+            }
+            sendData(data);
+        })
+    }
 }
 
 printList();
