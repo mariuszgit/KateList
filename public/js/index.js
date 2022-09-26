@@ -64,6 +64,7 @@ function createListItem(element) {
         list_content.classList.add('list-item__content');
     const list_category = document.createElement('div');
         list_category.classList.add('list-item__category');
+        list_category.innerHTML = '<img src="img/personal.svg" alt="">';
     const list_description = document.createElement('div');
         list_description.classList.add('list-item__description');
     const list_title = document.createElement('div');

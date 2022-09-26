@@ -26,10 +26,11 @@ body {
 }
 
 h1 {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.1;
   color: #fff;
+  z-index: 99;
 }
 
 .add-btn {
@@ -136,18 +137,23 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .list-item__description {
   padding-left: 16px;
+  overflow: hidden;
 }
 
 .list-item__title {
   margin-bottom: 4px;
+  overflow: hidden;
 }
 
 .list-item__details {
   font-size: 12px;
+  overflow: hidden;
 }
 
 .list-item__check {
@@ -158,6 +164,8 @@ h1 {
   width: 26px;
   height: 26px;
   margin-left: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .header {
@@ -174,7 +182,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 200px;
+  height: 150px;
   position: relative;
   overflow: hidden;
   padding: 8px;

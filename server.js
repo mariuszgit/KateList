@@ -8,8 +8,9 @@ app.use(express.json({limit: '1mb'}))
 const db = new Datastore({filename: 'datastore.db'});
 db.loadDatabase();
 
+const port = process.env.PORT || 3000;
 app.listen(3000, () => {
-    console.log('listening to port 3000');
+    console.log(`listening to port ${port}`);
 })
 
 app.get('/api', (request, response) => {
