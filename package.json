@@ -1,0 +1,23 @@
+{
+  "name": "katelist",
+  "version": "1.0.0",
+  "description": "Todo app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariuszgit/katelist.git"
+  },
+  "author": "Mariusz Zawierucha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mariuszgit/katelist/issues"
+  },
+  "homepage": "https://github.com/mariuszgit/katelist#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nedb": "^1.8.0"
+  }
+}
